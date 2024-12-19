@@ -64,7 +64,7 @@ public class better_drops
             .nutrition(2)
             .saturationModifier(0.1f)
             .alwaysEdible()
-            .effect(new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.WATER_BREATHING, 2400, 0), 1.0F)
             .build())));
 
     // chevon
