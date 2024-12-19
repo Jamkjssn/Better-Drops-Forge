@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "better_drops:raw_armadillo"
+  },
+  "result": "better_drops:cooked_armadillo",
+  "experience": 0.35,
+  "cookingtime": 100
+}
