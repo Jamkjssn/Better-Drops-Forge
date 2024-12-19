@@ -9,8 +9,6 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
@@ -23,6 +21,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+
+@SuppressWarnings("unused")
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(better_drops.MODID)
@@ -39,21 +39,6 @@ public class better_drops
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "better_drops" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    // My Created new block
-    // First the block is registered
-    public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).strength(5.0f, 6.0f)));
-    // Then I register the block as an item
-    public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItem(RUBY_BLOCK.get(), new Item.Properties()));
-
-
-    // Creates a new Block with the id "examplemod:example_block", combining the namespace and path
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("example_block", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
-    // Creates a new BlockItem with the id "examplemod:example_block", combining the namespace and path
-    public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties()));
-
-    // Creates a new food item with the id "examplemod:example_id", nutrition 1 and saturation 2
-    public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build())));
 
     // armadillo_stew
     public static final RegistryObject<Item> ARMADILLO_STEW = ITEMS.register("armadillo_stew", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
@@ -239,7 +224,7 @@ public class better_drops
 
     // Creates a creative tab with the id "better_drops" for all better_drops items
     public static final RegistryObject<CreativeModeTab> Better_Drops_Tab = CREATIVE_MODE_TABS.register("better_drops", () -> CreativeModeTab.builder()
-            .withTabsBefore(CreativeModeTabs.FOOD_AND_DRINKS)
+            .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
             .icon(() -> ARMADILLO_STEW.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(ARMADILLO_STEW.get());
@@ -278,7 +263,7 @@ public class better_drops
     {
         IEventBus modEventBus = context.getModEventBus();
 
-        // Register the commonSetup method for modloading
+        // Register the commonSetup method for mod loading
         modEventBus.addListener(this::commonSetup);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
@@ -293,25 +278,12 @@ public class better_drops
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
-
-// Commenting this out for now since the config file is empty and frankly I dont know what this is
-//        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-//        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
-
-// Commenting this out for now since the config file is empty and frankly I dont know what this is
-
-//        if (Config.logDirtBlock)
-//            LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-//
-//        LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
-//
-//        Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
     // Add the example block item to the building blocks tab
@@ -319,16 +291,6 @@ public class better_drops
     {
 
     }
-
-// The two functions below are not important right now but are placeholders for possible future needs
-
-//    // You can use SubscribeEvent and let the Event Bus discover methods to call
-//    @SubscribeEvent
-//    public void onServerStarting(ServerStartingEvent event)
-//    {
-//        // Do something when the server starts
-//        LOGGER.info("HELLO from server starting");
-//    }
 
     // This is going to handle entity drops by checking for when things die
     @Mod.EventBusSubscriber(modid = better_drops.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
