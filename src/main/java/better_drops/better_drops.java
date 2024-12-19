@@ -4,8 +4,21 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.animal.*;
+import net.minecraft.world.entity.animal.allay.Allay;
+import net.minecraft.world.entity.animal.armadillo.Armadillo;
 import net.minecraft.world.entity.animal.axolotl.Axolotl;
+import net.minecraft.world.entity.animal.camel.Camel;
+import net.minecraft.world.entity.animal.frog.Frog;
+import net.minecraft.world.entity.animal.frog.Tadpole;
+import net.minecraft.world.entity.animal.goat.Goat;
+import net.minecraft.world.entity.animal.sniffer.Sniffer;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.monster.Endermite;
+import net.minecraft.world.entity.monster.Vex;
+import net.minecraft.world.entity.monster.piglin.Piglin;
+import net.minecraft.world.entity.monster.piglin.PiglinBrute;
+import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
@@ -305,6 +318,156 @@ public class better_drops
                         event.getEntity().getY(),
                         event.getEntity().getZ(),
                         new ItemStack(AXOLOTL_GILL.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Camel) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(RAW_CAMEL.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Armadillo) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(RAW_ARMADILLO.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Goat) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(CHEVON.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Ocelot || event.getEntity() instanceof Cat) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(RAW_FELINE.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Piglin || event.getEntity() instanceof PiglinBrute) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(RAW_PIGLIN.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Villager) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(RAW_VILLAGER.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Sniffer) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(SNIFFER_LEG.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Frog) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(FROG_LEGS.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Dolphin) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(DOLPHIN_FIN.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Endermite) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(ENDER_CARAPACE.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Fox) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(FOX_TAIL.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Vex) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(INCORPOREAL_MEAT.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Allay) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(JINGLE_MEAT.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Bee) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(RAW_BEE.get())
+                );
+                event.getDrops().add(drop);
+            }
+            if (event.getEntity() instanceof Tadpole) {
+                ItemEntity drop = new ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(TADPOLE.get())
                 );
                 event.getDrops().add(drop);
             }
