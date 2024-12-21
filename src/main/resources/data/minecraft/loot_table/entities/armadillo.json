@@ -2,19 +2,25 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "betterdrops:raw_armadillo",
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": 1
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 0
+              },
+              "function": "minecraft:set_count"
             }
-          ]
+          ],
+          "name": "betterdrops:raw_armadillo"
         }
-      ]
+      ],
+      "rolls": 1
     }
   ],
   "random_sequence": "minecraft:entities/armadillo"
