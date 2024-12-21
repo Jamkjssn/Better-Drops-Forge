@@ -6,22 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stick",
+          "name": "betterdrops:jingle_meat",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": 1
-            },
-            {
-              "function": "minecraft:set_custom_model_data",
-              "value": 15
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "Jingle Meat",
-                "italic": false
-              }
             }
           ]
         }
