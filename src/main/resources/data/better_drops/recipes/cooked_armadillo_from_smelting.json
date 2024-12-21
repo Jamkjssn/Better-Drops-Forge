@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "better_drops:raw_armadillo"
-  },
-  "result": "better_drops:cooked_armadillo",
-  "experience": 1000,
-  "cookingtime": 200
-}

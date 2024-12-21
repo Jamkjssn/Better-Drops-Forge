@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "betterdrops:silverfish_wool"
+    },
+    {
+      "item": "betterdrops:silverfish_wool"
+    },
+    {
+      "item": "betterdrops:silverfish_wool"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:iron_nugget"
+  }
+}
