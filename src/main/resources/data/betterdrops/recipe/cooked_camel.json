@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": "betterdrops:raw_camel",
+  "result": {
+    "id": "betterdrops:cooked_camel"
+  }
+}

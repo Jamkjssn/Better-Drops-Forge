@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "betterdrops",
+	"version": "${version}",
+	"name": "Better Drops",
+	"description": "Adding drops to the dropless.",
+	"authors": [
+		"DiabolicalGolem",
+		"Jamkjssn"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/DiabolicalGolem/Better-Drops-Fabric"
+	},
+	"license": "MIT",
+	"icon": "assets/better_drops/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.betterdrops.BetterDrops"
+		],
+		"fabric-datagen": [
+			"net.betterdrops.BetterDropsDataGenerator"
+		],
+		"client": [
+			"net.betterdrops.BetterDropsClient"
+		]
+	},
+	"mixins": [
+		"betterdrops.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

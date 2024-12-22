@@ -1,0 +1,188 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "minecraft:item/stick"
+    },
+    "overrides": [
+      {
+        "predicate": {
+          "custom_model_data": 1
+        },
+        "model": "better_drops:item/raw_armadillo"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 2
+        },
+        "model": "better_drops:item/armadillo_stew"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 3
+        },
+        "model": "better_drops:item/axolotl_gill"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 4
+        },
+        "model": "better_drops:item/chevon"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 5
+        },
+        "model": "better_drops:item/cooked_chevon"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 6
+        },
+        "model": "better_drops:item/chevon_stew"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 7
+        },
+        "model": "better_drops:item/ender_carapace"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 8
+        },
+        "model": "better_drops:item/ender_stew"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 9
+        },
+        "model": "better_drops:item/fox_tail"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 10
+        },
+        "model": "better_drops:item/fox_tail_stew"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 11
+        },
+        "model": "better_drops:item/frog_legs"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 12
+        },
+        "model": "better_drops:item/cuisses_de_grenouilles"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 13
+        },
+        "model": "better_drops:item/incorporeal_meat"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 14
+        },
+        "model": "better_drops:item/incorporeal_stew"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 15
+        },
+        "model": "better_drops:item/jingle_meat"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 16
+        },
+        "model": "better_drops:item/cooked_jingle_meat"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 17
+        },
+        "model": "better_drops:item/raw_bee"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 18
+        },
+        "model": "better_drops:item/popped_bee"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 19
+        },
+        "model": "better_drops:item/raw_camel"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 20
+        },
+        "model": "better_drops:item/cooked_camel"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 21
+        },
+        "model": "better_drops:item/raw_feline"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 22
+        },
+        "model": "better_drops:item/cooked_feline"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 23
+        },
+        "model": "better_drops:item/raw_piglin"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 24
+        },
+        "model": "better_drops:item/cooked_piglin"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 25
+        },
+        "model": "better_drops:item/raw_villager"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 26
+        },
+        "model": "better_drops:item/cooked_villager"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 27
+        },
+        "model": "better_drops:item/sniffer_leg"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 28
+        },
+        "model": "better_drops:item/cooked_sniffer_leg"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 29
+        },
+        "model": "better_drops:item/tadpole"
+      },
+      {
+        "predicate": {
+          "custom_model_data": 30
+        },
+        "model": "better_drops:item/dolphin_fin"
+      }
+    ]
+  }

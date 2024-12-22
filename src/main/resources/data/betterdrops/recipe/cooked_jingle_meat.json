@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": "betterdrops:jingle_meat",
+  "result": {
+    "id": "betterdrops:cooked_jingle_meat"
+  }
+}

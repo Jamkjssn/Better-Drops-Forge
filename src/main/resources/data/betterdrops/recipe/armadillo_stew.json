@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "betterdrops:raw_armadillo",
+    "minecraft:bowl"
+  ],
+  "result": {
+    "count": 1,
+    "id": "betterdrops:armadillo_stew"
+  }
+}
