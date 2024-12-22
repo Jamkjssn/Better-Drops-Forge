@@ -36,7 +36,8 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "cooked_feline")))
             .food(ModFoodComponents.COOKED_FELINE)));
     public static final Item COOKED_JINGLE_MEAT = registerItem("cooked_jingle_meat", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "cooked_jingle_meat")))));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "cooked_jingle_meat")))
+            .food(ModFoodComponents.COOKED_JINGLE_MEAT)));
     public static final Item COOKED_PIGLIN = registerItem("cooked_piglin", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "cooked_piglin")))
             .food(ModFoodComponents.COOKED_PIGLIN)));
@@ -74,11 +75,14 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "frog_legs")))
             .food(ModFoodComponents.FROG_LEGS, ModFoodComponents.FROG_LEGS_EFFECT)));
     public static final Item INCORPOREAL_MEAT = registerItem("incorporeal_meat", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "incorporeal_meat")))));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "incorporeal_meat")))
+            .food(ModFoodComponents.INCORPOREAL_MEAT)));
     public static final Item INCORPOREAL_STEW = registerItem("incorporeal_stew", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "incorporeal_stew")))));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "incorporeal_stew")))
+            .food(ModFoodComponents.INCORPOREAL_STEW)));
     public static final Item JINGLE_MEAT = registerItem("jingle_meat", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "jingle_meat")))));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "jingle_meat")))
+            .food(ModFoodComponents.JINGLE_MEAT)));
     public static final Item POPPED_BEE = registerItem("popped_bee", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "popped_bee")))
             .food(ModFoodComponents.POPPED_BEE)));
@@ -101,7 +105,8 @@ public class ModItems {
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "raw_villager")))
             .food(ModFoodComponents.RAW_VILLAGER, ModFoodComponents.RAW_VILLAGER_EFFECT)));
     public static final Item SILENT_STEW = registerItem("silent_stew", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "silent_stew")))));
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "silent_stew")))
+            .food(ModFoodComponents.SILENT_STEW)));
     public static final Item SILVERFISH_WOOL = registerItem("silverfish_wool", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "silverfish_wool")))));
     public static final Item SNIFFER_LEG = registerItem("sniffer_leg", new Item(new Item.Settings()

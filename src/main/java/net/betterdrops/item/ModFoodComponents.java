@@ -16,7 +16,7 @@ public class ModFoodComponents {
     public static final FoodComponent COOKED_CAMEL = new FoodComponent.Builder().nutrition(9).saturationModifier(0.8f).build();
     public static final FoodComponent COOKED_CHEVON = new FoodComponent.Builder().nutrition(4).saturationModifier(0.4f).build();
     public static final FoodComponent COOKED_FELINE = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3f).build();
-    // Cooked jingle meat
+    public static final FoodComponent COOKED_JINGLE_MEAT = new FoodComponent.Builder().nutrition(0).saturationModifier(0).build();
     public static final FoodComponent COOKED_PIGLIN = new FoodComponent.Builder().nutrition(4).saturationModifier(0.4f).build();
     public static final FoodComponent COOKED_SNIFFER_LEG = new FoodComponent.Builder().nutrition(5).saturationModifier(0.7f).build();
     public static final FoodComponent COOKED_VILLAGER = new FoodComponent.Builder().nutrition(3).saturationModifier(0.3f).build();
@@ -29,9 +29,9 @@ public class ModFoodComponents {
     public static final FoodComponent FOX_TAIL = new FoodComponent.Builder().nutrition(0).saturationModifier(0.1f).alwaysEdible().build();
     public static final FoodComponent FOX_TAIL_STEW = createStew(3).build();
     public static final FoodComponent FROG_LEGS = new FoodComponent.Builder().nutrition(1).saturationModifier(0.2f).build();
-    // Incorporeal Meat
-    // Incorporeal Stew
-    // Jingle Meat
+    public static final FoodComponent INCORPOREAL_MEAT = new FoodComponent.Builder().nutrition(0).saturationModifier(0).build();
+    public static final FoodComponent INCORPOREAL_STEW = new FoodComponent.Builder().nutrition(0).saturationModifier(0).build();
+    public static final FoodComponent JINGLE_MEAT = new FoodComponent.Builder().nutrition(0).saturationModifier(0).build();
     public static final FoodComponent POPPED_BEE = new FoodComponent.Builder().nutrition(1).saturationModifier(0.4f).alwaysEdible().build();
     public static final FoodComponent RAW_ARMADILLO = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f).build();
     public static final FoodComponent RAW_BEE = new FoodComponent.Builder().nutrition(0).saturationModifier(0.2f).alwaysEdible().build();
@@ -39,7 +39,7 @@ public class ModFoodComponents {
     public static final FoodComponent RAW_FELINE = new FoodComponent.Builder().nutrition(1).saturationModifier(0.15f).build();
     public static final FoodComponent RAW_PIGLIN = new FoodComponent.Builder().nutrition(2).saturationModifier(0.2f).build();
     public static final FoodComponent RAW_VILLAGER = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f).alwaysEdible().build();
-    // Silent Stew
+    public static final FoodComponent SILENT_STEW = createStew(0).build();
     public static final FoodComponent SNIFFER_LEG = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3f).build();
     public static final FoodComponent TADPOLE = new FoodComponent.Builder().nutrition(1).saturationModifier(0).alwaysEdible().build();
 
