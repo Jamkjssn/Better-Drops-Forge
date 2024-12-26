@@ -17,9 +17,9 @@ public class ModItems {
     public static final Item AXOLOTL_GILL = registerItem("axolotl_gill", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "axolotl_gill")))
             .food(ModFoodComponents.AXOLOTL_GILL, ModFoodComponents.AXOLOTL_GILL_EFFECT)));
-    public static final Item BAT_WINGS = registerItem("bat_wings", new Item(new Item.Settings()
-            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "bat_wings")))
-            .food(ModFoodComponents.BAT_WINGS, ModFoodComponents.BAT_WINGS_EFFECT)));
+    public static final Item BAT_WING = registerItem("bat_wing", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "bat_wing")))
+            .food(ModFoodComponents.BAT_WING, ModFoodComponents.BAT_WING_EFFECT)));
     public static final Item CHEVON = registerItem("chevon", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(BetterDrops.MOD_ID, "chevon")))
             .food(ModFoodComponents.CHEVON, ModFoodComponents.CHEVON_EFFECT)));
