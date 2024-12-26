@@ -10,7 +10,7 @@ import net.minecraft.item.consume.ApplyEffectsConsumeEffect;
 public class ModFoodComponents {
     public static final FoodComponent ARMADILLO_STEW = createStew(4).build();
     public static final FoodComponent AXOLOTL_GILL = new FoodComponent.Builder().nutrition(1).alwaysEdible().build();
-    public static final FoodComponent BAT_WINGS = new FoodComponent.Builder().nutrition(1).alwaysEdible().build();
+    public static final FoodComponent BAT_WING = new FoodComponent.Builder().nutrition(1).alwaysEdible().build();
     public static final FoodComponent CHEVON = new FoodComponent.Builder().nutrition(2).saturationModifier(0.2f).build();
     public static final FoodComponent CHEVON_STEW = createStew(5).build();
     public static final FoodComponent COOKED_CAMEL = new FoodComponent.Builder().nutrition(9).saturationModifier(0.8f).build();
@@ -46,7 +46,7 @@ public class ModFoodComponents {
     public static final ConsumableComponent AXOLOTL_GILL_EFFECT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 200, 0), 1.0f))
             .build();
-    public static final ConsumableComponent BAT_WINGS_EFFECT = ConsumableComponents.food()
+    public static final ConsumableComponent BAT_WING_EFFECT = ConsumableComponents.food()
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600, 0), 0.7f))
             .consumeEffect(new ApplyEffectsConsumeEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 600, 0), 0.7f))
             .build();
