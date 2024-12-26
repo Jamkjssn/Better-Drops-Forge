@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "betterdrops:bat_wings"
+          "name": "betterdrops:bat_wing"
         }
       ],
       "rolls": 1
