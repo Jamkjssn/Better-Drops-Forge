@@ -21,7 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_ARMADILLO);
                         entries.add(ModItems.ARMADILLO_STEW);
                         entries.add(ModItems.AXOLOTL_GILL);
-                        entries.add(ModItems.BAT_WINGS);
+                        entries.add(ModItems.BAT_WING);
                         entries.add(ModItems.RAW_BEE);
                         entries.add(ModItems.POPPED_BEE);
                         entries.add(ModItems.RAW_CAMEL);
